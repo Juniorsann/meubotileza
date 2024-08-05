@@ -1,5 +1,3 @@
-// script.js
-
 document.addEventListener('DOMContentLoaded', function () {
     const form = document.getElementById('evaluationForm');
     const nextBtn = document.getElementById('nextBtn');
@@ -51,10 +49,8 @@ document.addEventListener('DOMContentLoaded', function () {
             textoPersonalizado: getTextByProfile(maxScoreProfile)
         };
 
-        // Aqui você pode usar o resultado para gerar o PDF ou qualquer outra ação
         console.log(summaryResponse);
 
-        // Redirecionar para a página de resumo com as informações
         localStorage.setItem('summaryResponse', JSON.stringify(summaryResponse));
         window.location.href = 'summary.html';
     });
