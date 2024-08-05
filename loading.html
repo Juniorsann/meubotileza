@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estamos Perfumando seu Relatório</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f5f5f5;
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        #loading {
+            text-align: center;
+        }
+        #loading img {
+            width: 100px;
+            height: 100px;
+        }
+        #loading p {
+            font-size: 18px;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div id="loading">
+        <img src="loading.gif" alt="Carregando...">
+        <p>Estamos Perfumando seu Relatório</p>
+    </div>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            setTimeout(() => {
+                window.location.href = 'summary.html';  // Redireciona para a página de resumo após o tempo de carregamento
+            }, 5000);  // Tempo de carregamento em milissegundos (5 segundos)
+        });
+    </script>
+</body>
+</html>
+
+
+
+
+
+
